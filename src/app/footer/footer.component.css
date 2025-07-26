@@ -1,0 +1,12 @@
+footer{
+background-color: #2e0202;
+padding: 1em;
+color: white;
+
+}
+
+p{
+display: flex;
+justify-content: center;
+font-size: 1.3em;
+}

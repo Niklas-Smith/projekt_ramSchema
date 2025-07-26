@@ -1,0 +1,52 @@
+ul {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+ul li {
+
+margin-right: 1.2em;
+
+}
+
+ul li a {
+text-decoration: none;
+color: white;
+font-size: 1.3em;
+}
+
+
+.my_logo {
+ text-decoration: none;
+}
+
+nav {
+display: flex;
+justify-content: center;
+}
+
+h1 {
+color: white;
+display: flex;
+justify-content: center;
+padding-top: 1em;
+font-size:  2em;
+margin-bottom: 0.8em;
+font-weight: bold;
+
+}
+
+header {
+
+background-color: #2e0202;
+padding: 1em;
+}
+
+.active {
+background-color: rgb(30, 61, 148);
+padding: 0.2em;
+
+}

@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+margin: 0;
+
+}
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1em;
+line-height: 1.5em;
+background-color: #E5E0D8;
+  
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+
+
+
+main{
+background-color: #F8F8F8;
+padding: 1em;
+min-height: 20em;
+box-shadow: 0 0 0.3em rgb(5, 0, 0);
+
+}
