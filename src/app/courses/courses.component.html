@@ -1,10 +1,27 @@
-<p>courses works!</p>
 
 
-<ul>
-<li *ngFor="let courseInterface of courseList">
-     
-    {{ courseInterface.progression}}
-</li>
+<!-- <p>{{courseList.length}}</p> -->
 
-</ul>
+
+<table>
+    <caption>Våra Kurser</caption>
+<thead>
+<tr>
+<th (click)="sortCode()">KursKod</th>
+<th (click)="sortName()">Kursnamn</th>
+<th (click)="sortSubject()">Ämne</th>
+<th (click)="sortPoints()">Poäng</th>
+<th >Kursplan</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let courseInterface of courseList">   
+<td>{{courseInterface.courseCode }} </td>
+<td>{{courseInterface.courseName }}</td>
+<td>{{courseInterface.subject }}</td>
+<td>{{courseInterface.points }}</td>
+<td><a [href]="courseInterface.syllabus" target="_blank" >MerInfo</a>
+</td>
+</tr>
+</tbody>
+</table>

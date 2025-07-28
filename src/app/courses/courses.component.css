@@ -1,0 +1,32 @@
+caption{
+font-size: 1.5em;
+margin-top: 2em;
+font-weight: bold;
+background-color: #e1f0d7;
+padding: 1em;
+margin-bottom: 1em;
+box-shadow: 0 0 8px black;
+}
+
+table {
+width: 100%;
+padding: 1em;
+}
+
+td {
+text-align: center;
+padding-bottom: 1em;
+border-bottom: 1px dotted black;
+padding: 1em;
+}
+
+th {
+color: rgb(1, 90, 16);
+text-decoration-line: underline;
+cursor: pointer;
+font-weight: bold;
+ font-size: 1.1em;
+text-align: center;
+padding-bottom: 1.5em;
+
+}

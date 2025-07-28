@@ -7,11 +7,11 @@ import { CourseInterface } from '../model/courseInterface';
   providedIn: 'root'
 })
 export class CourseInfoService {
-
+   
+  // fetch miun_courses.json
   private url:string = "miun_courses.json"
 
   constructor(private http:HttpClient) {}
-
 getCourses(): Observable<CourseInterface[]> {
   
 return this.http.get<CourseInterface[]>(this.url);
