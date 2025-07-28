@@ -1,6 +1,17 @@
 
 
-<!-- <p>{{courseList.length}}</p> -->
+
+
+<div>
+<label for="filter">Filtera Kurser</label>
+<input type="text" id="filter" [(ngModel)]="filterInput" (input)="filterCourses()">
+</div>
+<p>Antal visande kurser: <br>
+    {{coursesFilter.length}}</p> 
+
+<select name="courseSubject" id="courseSubject">
+  <option *ngFor="let courseInterface of uniqueCourses">{{courseInterface.subject }}</option>
+</select>
 
 
 <table>
@@ -15,7 +26,7 @@
 </tr>
 </thead>
 <tbody>
-<tr *ngFor="let courseInterface of courseList">   
+<tr *ngFor="let courseInterface of coursesFilter">   
 <td>{{courseInterface.courseCode }} </td>
 <td>{{courseInterface.courseName }}</td>
 <td>{{courseInterface.subject }}</td>
